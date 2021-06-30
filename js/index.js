@@ -16,7 +16,7 @@ function format(char) {
 
 function binaryToString (string) {
 	let exit = string.split(' ').map(function(char){
-		return String.fromCharCode(parseInt(char,2));
+		return String.fromCharCode(parseInt(char,2) ? parseInt(char,2) : 32);
 	});
 	return exit.join('');
 }
