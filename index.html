@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-	<header>
+	<header class="card">
 		<h1>Traductor Binario</h1>
 		<nav>
 			<ul>
@@ -17,15 +17,17 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="app">
-		<input type="text" v-model="message">
-		<br>
-		<p>{{toBinary}}</p>
-		<input type="text" v-model="binary">
-		<br>
-		<p>{{Binary}}</p>
-	</div>
-	<script type="text/javascript" src="./js/index.js"></script>
+	<section class="card">
+		<div id="app">
+			<input type="text" v-model="message">
+			<br>
+			<p>{{toBinary}}</p>
+			<input type="text" v-model="binary">
+			<br>
+			<p>{{Binary}}</p>
+		</div>
+		<script type="text/javascript" src="./js/index.js"></script>
+	</section>
 </body>
 </html>
 
