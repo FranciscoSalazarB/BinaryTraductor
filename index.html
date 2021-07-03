@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Traductor Binario</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -19,11 +20,11 @@
 	</header>
 	<section class="card">
 		<div id="app">
-			<input type="text" v-model="message">
-			<br>
+			<input type="text" v-model="message" name="toBinary">
+			<label for="toBinary">Introduce un texto</label>
 			<p>{{toBinary}}</p>
-			<input type="text" v-model="binary">
-			<br>
+			<input type="text" v-model="binary" name="fromBinary">
+			<label for="fromBinary">Introduce un Binario</label>
 			<p>{{Binary}}</p>
 		</div>
 		<script type="text/javascript" src="./js/index.js"></script>
